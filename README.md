@@ -1,1 +1,1 @@
-# Dementia-diagnosis
+# Gait Dementia Risk Prediction
