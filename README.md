@@ -1,1 +1,1 @@
-# Dementia-diagnosis
+# Parkinson's disease-diagnosis
