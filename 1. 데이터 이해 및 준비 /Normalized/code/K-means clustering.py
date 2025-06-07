@@ -57,3 +57,6 @@ print(df.groupby('cluster')[features].mean())
 # 6. 시각화
 sns.pairplot(df, hue='cluster', vars=features[:4])  # 일부만 시각화
 plt.show()
+
+# 7. 클러스터링 결과 저장
+df.to_csv("C:/osp_pakin/clustered_data.csv", index=False)
