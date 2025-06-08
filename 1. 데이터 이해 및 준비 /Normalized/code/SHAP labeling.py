@@ -46,11 +46,11 @@ df['risk_percent'] = risk_percent
 
 # 10. 위험도 등급 매핑 함수
 def risk_label(percent):
-    if percent <= 25:
+    if percent <= 40:
         return 0  # 치매 저위험군
-    elif percent <= 50:
+    elif percent <= 70:
         return 1  # 중하 위험군
-    elif percent <= 75:
+    elif percent <= 80:
         return 2  # 중상 위험군
     else:
         return 3  # 고위험군
@@ -71,3 +71,6 @@ plt.show()
 
 # 14. SHAP Summary Plot
 shap.summary_plot(shap_values, features=X, feature_names=features)
+
+#칼럼 저장하기
+df.to_csv("C:/osp_pakin/clustered_data.csv", index=False)
