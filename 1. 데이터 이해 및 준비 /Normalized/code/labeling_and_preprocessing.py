@@ -37,3 +37,18 @@ print(f"Train: {len(train_dataset)}, Val: {len(val_dataset)}, Test: {len(test_da
 torch.save(train_dataset, "C:/osp_pakin/train_dataset.pt")
 torch.save(val_dataset, "C:/osp_pakin/val_dataset.pt")
 torch.save(test_dataset, "C:/osp_pakin/test_dataset.pt")
+
+# 혹시모르니까 csv 파일로 전환해서 저장해두기
+# NumPy 배열을 DataFrame으로 변환
+train_df = pd.DataFrame(X_train, columns=features)
+train_df['risk_level'] = y_train
+
+val_df = pd.DataFrame(X_val, columns=features)
+val_df['risk_level'] = y_val
+
+test_df = pd.DataFrame(X_test, columns=features)
+test_df['risk_level'] = y_test
+
+train_df.to_csv("C:/osp_pakin/train_data.csv", index=False)
+val_df.to_csv("C:/osp_pakin/val_data.csv", index=False)
+test_df.to_csv("C:/osp_pakin/test_data.csv", index=False)
