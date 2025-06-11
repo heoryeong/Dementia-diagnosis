@@ -30,5 +30,10 @@ train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
 val_loader = DataLoader(val_dataset, batch_size=64)
 test_loader = DataLoader(test_dataset, batch_size=64)
 
-# 7. (선택) 확인
+# 7. 확인
 print(f"Train: {len(train_dataset)}, Val: {len(val_dataset)}, Test: {len(test_dataset)}")
+
+# 8. 나중에 모델학습에서 빠르게 불러오기 위한 저장용 코드 (pythorch 전용 저장 방식)
+torch.save(train_dataset, "C:/osp_pakin/train_dataset.pt")
+torch.save(val_dataset, "C:/osp_pakin/val_dataset.pt")
+torch.save(test_dataset, "C:/osp_pakin/test_dataset.pt")
