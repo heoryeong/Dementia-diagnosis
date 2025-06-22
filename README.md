@@ -158,7 +158,7 @@ Epoch 수 = 50: 초기 학습 성능을 확인하기 위한 탐색적 설정
 
 학습 구조
 
-각 epoch 마다 train loss와 validation loss를 추적하여 과적합 여부 실시간 확ㅇ,ㄴ
+각 epoch 마다 train loss와 validation loss를 추적하여 과적합 여부 실시간 확인
 
 model.eval() 및 torch.no_grad()를 사용하여 평가 시 gradient 계산을 방지했다.
 
