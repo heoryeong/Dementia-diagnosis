@@ -1,4 +1,4 @@
-# (Main Branch)Parkinson's disease-diagnosis _ Main Branch
+# (Main Branch)Parkinson's disease-diagnosis
 
 목적
 
